@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Podpora – Rybářský lístek CZ</title>
+<meta name="description" content="Podpora aplikace Rybářský lístek CZ – testy na první rybářský lístek. Kontakt a časté otázky.">
+<style>
+  :root { --bg: #f4f6fa; --card: #ffffff; --text: #141a2a; --muted: #5a6478; --line: #e3e7ef; --accent: #0e8fb5; --link: #0a76a0; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0d1117; --card: #161b24; --text: #e8ecf3; --muted: #9aa4b5; --line: #262d3a; --link: #5cc8e8; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", sans-serif; -webkit-text-size-adjust: 100%; }
+  header { background: linear-gradient(135deg, #22c3d9, #08557f); color: #ffffff; padding: 2.2rem 1.25rem 1.8rem; }
+  header .in, main { max-width: 46rem; margin: 0 auto; }
+  header p { margin: 0.3rem 0 0; font-weight: 600; }
+  h1 { margin: 0; font-size: 1.75rem; line-height: 1.25; }
+  main { padding: 1.25rem; }
+  .box { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 1rem 1.25rem; margin: 0 0 1rem; }
+  .sum, .contact { border-left: 6px solid var(--accent); }
+  .sum ul { margin: 0.4rem 0 0; padding-left: 1.2rem; }
+  h2 { font-size: 1.15rem; margin: 1.6rem 0 0.4rem; }
+  details { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 0.7rem 1rem; margin: 0 0 0.6rem; }
+  summary { font-weight: 650; cursor: pointer; }
+  p, li { margin: 0.4rem 0; }
+  a { color: var(--link); }
+  .muted { color: var(--muted); font-size: 0.92rem; }
+  .todo { background: #fff3c4; color: #5a4300; padding: 0 0.3rem; border-radius: 4px; }
+  footer { max-width: 46rem; margin: 0 auto; padding: 0 1.25rem 2.5rem; }
+</style>
+</head>
+<body>
+<header>
+  <div class="in">
+    <h1>Rybářský lístek CZ – podpora</h1>
+    <p>Testy na první rybářský lístek (iPhone a Android)</p>
+  </div>
+</header>
+<main>
+  <div class="box contact">
+    <strong>Kontakt:</strong> Michal Kůrka, <a href="mailto:smooth@email.cz">smooth@email.cz</a><br>
+    Napište nám, když najdete chybu v otázce nebo v aplikaci, nebo máte nápad na vylepšení. U chyby v otázce prosím
+    uveďte její kód (např. R5063 – je v detailu otázky) a verzi aplikace (Více → O aplikaci).
+  </div>
+
+  <h2>Časté otázky</h2>
+  <details>
+    <summary>Je aplikace oficiální?</summary>
+    <p>Ne. Je to neoficiální výuková aplikace, není aplikací Českého rybářského svazu (ČRS) ani Ministerstva zemědělství
+      a není s nimi spojena. Otázky a obrázky ale pocházejí ze souboru otázek ČRS, ze kterého se skládá test k prvnímu
+      rybářskému lístku: <a href="https://old.rybsvaz.cz/pages_cz/test_rybarskych_znalosti.php">Test rybářských znalostí ČRS</a>
+      (© Český rybářský svaz).</p>
+  </details>
+  <details>
+    <summary>Jak vypadá zkouška na první rybářský lístek?</summary>
+    <p>Podle ČRS je to test z 25 otázek se třemi možnými odpověďmi, z nichž je vždy jedna správná. K úspěchu je potřeba
+      nejméně 13 správných odpovědí. Otázky jsou z 5 okruhů: poznávání ryb a vodních organismů, biologie ryb, způsoby
+      lovu, rybářské hospodaření a právní předpisy (zákon o rybářství, vyhláška a Stanovy ČRS). Zkoušku skládáte u místní
+      organizace rybářského svazu, která vám vydá osvědčení; rybářský lístek pak vydává obecní úřad obce s rozšířenou
+      působností. Časový limit ČRS neuvádí – v aplikaci má test orientačních 60 minut.</p>
+  </details>
+  <details>
+    <summary>Skládám zkoušku u Moravského rybářského svazu. Pomůže mi aplikace?</summary>
+    <p>Moravský rybářský svaz (MRS) zkouší podle vlastních testů, otázky se proto mohou lišit. Témata jsou stejná
+      (vyhláška č. 197/2004 Sb. stanoví pro všechny stejné oblasti znalostí), takže aplikace vám pomůže, ale nejde
+      o otázky MRS.</p>
+  </details>
+  <details>
+    <summary>Proč je v aplikaci 393 otázek, když ČRS uvádí 403?</summary>
+    <p>Deset otázek je v sadě ČRS dvakrát (stejné znění i odpovědi). V aplikaci je každá jen jednou – nic nechybí.</p>
+  </details>
+  <details>
+    <summary>Našel jsem otázku, kde odpověď neodpovídá zákonu</summary>
+    <p>Aplikace používá klíč ČRS. U jedné otázky má web ČRS starší odpověď než novější program a tištěné testy ČRS –
+      tam aplikace používá novější odpověď podle platné vyhlášky. U jiné otázky aplikace upozorní, že klíč ČRS vychází
+      ze starší úpravy. Když najdete další takovou otázku, napište nám prosím její kód.</p>
+  </details>
+  <details>
+    <summary>Potřebuje aplikace internet?</summary>
+    <p>Ne. Otázky i obrázky jsou součástí aplikace a fungují i v letadlovém režimu nebo u vody bez signálu. Nové otázky
+      přicházejí s aktualizací aplikace.</p>
+  </details>
+  <details>
+    <summary>Jak přenesu pokrok do jiného telefonu?</summary>
+    <p>V aplikaci otevřete Více → Nastavení → Pokrok → <em>Uložit zálohu do souboru</em> a soubor si uložte (např. do
+      Souborů nebo pošlete e-mailem sobě). V novém telefonu zvolte <em>Obnovit ze zálohy</em> a soubor vyberte.</p>
+  </details>
+  <details>
+    <summary>Jak smažu svůj pokrok?</summary>
+    <p>Více → Nastavení → Pokrok → <em>Smazat pokrok</em>. Nastavení zůstane, odpovědi a výsledky testů se smažou.
+      Všechno smažete také odinstalováním aplikace.</p>
+  </details>
+  <details>
+    <summary>Sbírá aplikace nějaké údaje?</summary>
+    <p>Ne. Nemá účet, reklamy ani analytiku a nic neodesílá. Podrobnosti jsou v
+      <a href="zasady-ochrany-soukromi.html">zásadách ochrany osobních údajů</a>.</p>
+  </details>
+  <details>
+    <summary>Kolik aplikace stojí?</summary>
+    <p>Stažení je zdarma a bez reklam. Zdarma jsou všechny otázky, učení po okruzích, vyhledávání a 3 testy nanečisto.
+      Plnou verzi (neomezené testy, chytré opakování, opakování chyb a ukazatel připravenosti) odemknete jednorázovým
+      nákupem v aplikaci – žádné předplatné.</p>
+  </details>
+  <details>
+    <summary>Koupil(a) jsem plnou verzi na novém telefonu a nevidím ji</summary>
+    <p>V aplikaci otevřete <strong>Nastavení → Plná verze → Obnovit nákup</strong>. Nákup je vázaný na váš účet Apple nebo
+      Google, ne na telefon.</p>
+  </details>
+</main>
+<footer>
+  <p class="muted">Otázky a obrázky © Český rybářský svaz, z. s. (old.rybsvaz.cz). Neoficiální aplikace – není aplikací ČRS
+    ani MZe. · <a href="zasady-ochrany-soukromi.html">Ochrana soukromí</a></p>
+</footer>
+</body>
+</html>
